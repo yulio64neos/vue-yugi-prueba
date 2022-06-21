@@ -13,7 +13,7 @@ export default {
         result: []
     }),
     created(){
-        axios.get("https://db.ygoprodeck.com/api/v7/cardinfo.php")
+        axios.get("https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=Elemental%20HERO")
         .then((result) =>{
             this.result = result.data.data
             console.log(result.data.data);
